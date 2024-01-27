@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro</title>
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+
+<body>
+
+    <section>
+        <section class="header">
+            <h1>
+                SkateShop & Clothes
+            </h1>
+
+            <img src="/img/Banner.jpeg" alt="Skateboarding" width="80%">
+
+            <p>Venta de patinetas, accesorios y ropa para skateboarding.</p>
+        </section>
+
+        <section class="menu">
+
+            <a href="index.html">Inicio.</a>
+
+            <a href="index3.html">Contactanos.</a>
+
+            <a href="index2.html">Productos.</a>
+        </section>
+
+        <h1>Ingresar</h1>
+
+        <form action="personales.php" method="post">
+            Correo:
+            <br><input type="text" name="correo" size="20">
+            <br>Contraseña:
+            <br><input type="password" name="contraseña" size="20">
+
+            <br>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Borrar">
+            </br>
+        </form>
+
+        <h1>Registrarse</h1>
+
+        <form action="datospersona.php" method="post">
+            Nombre:
+            <br><input type="text" name="nombre" size="20"></br>
+            Apellido:
+            <br><input type="text" name="apellido" size="20"></br>
+            Documento de identidad:
+            <br><input type="text" name="documento" size="20"></br>
+            Correo:
+            <br><input type="text" name="correo" size="20"></br>
+            Contraseña:
+            <br><input type="password" name="contraseña" size="20"></br>
+
+            <br>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Borrar">
+            </br>
+        </form>
+
+        <h2>Déjanos tu opinión</h2>
+
+        <form action="opiniones.php" method="post">
+            <br>Correo:
+            <br><input type="text" name="correo" size="20">
+            <br>Comentarios:
+            <br><textarea name="comentarios" rows="5" cols="50"></textarea>
+        </form>
+
+        <br>
+        <input type="submit" value="Enviar">
+        <input type="reset" value="Borrar">
+        </br>
+
+
+        <h2>Selecciona tu país de residencia.</h2>
+
+        <form action="residencia.php" method="post">
+            <select name="pais">
+                <option value="1">España</option>
+                <option value="2">Argentina</option>
+                <option value="3">Estados Unido</option>
+                <option value="4">Mexico</option>
+                <option value="5">Francia</option>
+                <option value="6">Canadá</option>
+                <option value="7">Otro</option>
+            </select>
+
+            <br><input type="submit" value="Enviar">
+
+        </form>
+
+        <section>
+            <h1>Como encontraste nuestra
+                pagina?</h1>
+
+            <form action="registrardatos.php" method="post">
+
+                Puedes seleccionar una o varias opciones(presione CTRL paara seleccionar varias opciones)<br>
+                <select name="colores[]" multiple="multiple" style="width:20%;">
+                    <option value "1">Amigos</option>
+                    <option value "2">Redes Sociales</option>
+                    <option value "3">Buscando Tiendas Online</option>
+                    <option value "4">Publicidad </option>
+                    <option value "5">Recomendación</option>
+
+                </select>
+                <br>
+                <input type="submit" value="Enviar">
+            </form>
+        </section>
+
+        <section>
+            <h1>Información personal y de
+                patrocinador</h1>
+            <form action="registrardatos" method="post">
+                <fieldset>
+                    <legend style="font-family: 'Franklin Gothic Medium'; font-size: 20px; color: #003300;">Datos
+                        Personales
+                    </legend>
+                    Nombre y Apellidos:
+                    <input type="text" name="nombre" size="30"><br>
+                    Numero de Identificación:
+                    <input type="text" name="dni" size="8"><br>
+                    Fecha de Nacimiento:
+                    <input type="text" name="fecha de nacimiento" size="12"><br>
+                    Dirección:
+                    <input type="text" name="direccion" size="30"><br>
+                    Teléfono:
+                    <input type="text" value="+57" name="telefono" size="10">
+                </fieldset>
+                <fieldset>
+                    <legend style="font-family: 'Franklin Gothic Medium'; font-size: 20px; color: #003300">Datos
+                        Patrocinador
+                    </legend>
+                    Nombre de la Empresa:
+                    <input type="text" name="nombre de la empresa" size="30"><br>
+                    Codigo de la Empresa:
+                    <input type="text" name="actividad" size="50"><br>
+                    Direccion:
+                    <input type="text" name="direccion empresa" size="30"><br>
+                    Telefono:
+                    <input type="text" name="telefono empresa" size="30"><br>
+                </fieldset>
+                <input type="submit" value="Enviar">
+            </form>
+        </section>
+    </section>
+</body>
+
+</html>

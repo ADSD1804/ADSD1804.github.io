@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="spa">
+
+<meta charset="UTF-8">
+<meta name="keywords" content="skateboarding, skate, skateshop, sk8">
+<meta name="description" content="Aquí podrás encontrar todo tipo de accesorios y ropa para skate.">
+<meta name="author" content="Andres David Soto Duque">
+<meta name="copyright" content="AD.SAS.">
+<link rel="stylesheet" href="/css/style.css">
+
+<head>
+    <title>AD Skateboarding</title>
+</head>
+
+<body>
+    <section class="container">
+        <section class="header">
+            <h1>
+                SkateShop & Clothes
+            </h1>
+
+            <img src="/img/Banner.jpeg" alt="Skateboarding" width="80%">
+
+            <p>Venta de patinetas, accesorios y ropa para skateboarding.</p>
+        </section>
+
+        <section class="menu">
+
+            <a href="index2.html">Productos para skate.</a>
+
+            <a href="index3.html">Contactanos.</a>
+
+            <a href="index4.html">Registrarse.</a>
+
+        </section>
+
+        <section class="enlaces">
+            <a href="#Trucos">Trucos</a>
+            <a href="#olimpico">Sabías que el Skateboarding es ahora un deporte Olímpico?</a>
+            <a href="#Tiempo">Cada cuánto patinas?</a>
+            <a href="#fav">Cuál es tu truco Favorito?</a>
+            <a href="#comentarios">Déjanos un comentario</a>
+        </section>
+
+        <section>
+            <a name="Trucos"></a>
+            <h3>Que trucos conoces?</h3>
+
+            <p>Puedes seleccionar varias opciones:</p>
+            <form action="trucos.php" method="post">
+                <input type="checkbox" name="nollie">Nollie<br>
+                <input type="checkbox" name="varial">Varialflip<br>
+                <input type="checkbox" name="3Flip">3 Flip<br>
+                <input type="checkbox" name="manual">Manual<br>
+            </form>
+
+            <img src="/img/patinar.jpg" width="800px">
+        </section>
+
+        <section>
+            <a name="Tiempo"></a>
+            <h3>Cada cuanto patinas?</h3>
+
+            <p>Selecciona una sola opción:</p>
+            <form action="frecuencia.php" method="post">
+                <input type="radio" name="frecuencia" value="1">Una vez al mes<br>
+                <input type="radio" name="frecuencia" value="2">Una vez por semana<br>
+                <input type="radio" name="frecuencia" value="3">Todos los días<br>
+                <input type="radio" name="frecuencia" value="4">Dos veces por día<br>
+            </form>
+
+            <img src="/img/skate1.jpg" width="20%">
+        </section>
+
+        <section>
+            <a name="fav"></a>
+            <h3>
+                Cual es tu truco favorito?
+            </h3>
+
+            <form action="registrardatos" method="post">
+                Selecciona tu truco favorito
+                <select name="articulo">
+                    <optgroup label="Trucos de Piso">
+                        <option value="1">Kickflip</option>
+                        <option value="1">Nollie</option>
+                        <option value="1">Body Varial</option>
+                        <option value="1">Pop Shove it</option>
+                    </optgroup>
+                    <optgroup label="Trucos en Rampa">
+                        <option value="1">50-50</option>
+                        <option value="1">Croket</option>
+                        <option value="1">Board Slide</option>
+                        <option value="1">Rock and Roll</option>
+                    </optgroup>
+                </select>
+                <input type="submit" value="Enviar">
+            </form>
+            <img src="/img/salto.png" width="800px">
+        </section>
+
+        <section>
+            <a name="olimpico"></a>
+            <h3>El Skateboarding en los juegos Olímpicos</h3>
+            
+            <p>El skateboarding es una actividad deportiva y recreativa que 
+                consiste en montar y realizar trucos sobre un skateboard.
+                Los patinadores se colocan sobre una tabla plana de madera, 
+                compuesta por una cubierta, 'trucks' y ruedas, y combinan el 
+                impulso y el juego de pies para ejecutar los trucos.</p>
+
+            <img src="/img/olimpico.jpg" width="800px"> <br>
+
+            <a href="https://olympics.com/es/deportes/skateboarding/">Juegos Olímpicos</a>
+        </section>
+
+
+
+        <section class="comentarios">
+            <a name="comentarios"></a>
+            <h3>Comentarios</h3>
+
+            <form action="registrardatos" method="post">
+                Nombre y Apellido
+                <input type="text" name="nombre" size="30"><br>
+                Eres mayor de edad?:<br>
+                <input type="radio" name="radio1" checked value="si">Si<br>
+                <input type="radio" name="radio1" value="no">No<br>
+                Edad:
+                <input type="text" name="edad" size="20"><br>
+                Telefono:
+                <input type="text" value="+57" name="telefon" size="" 15><br>
+                <textarea name="comentarios" rows="5" cols="40"> Ingrese aqui sus comentarios acerca de la página.</textarea><br>
+
+                <input type="submit" value="Enviar">
+
+            </form>
+        </section>
+
+    </section>
+
+</body>
+
+</html>
