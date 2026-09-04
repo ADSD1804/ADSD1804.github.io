@@ -19,4 +19,34 @@ document.addEventListener("DOMContentLoaded", function () {
   `;
 
   document.body.appendChild(banner);
+
+  function animate({ timing, draw, duration }) {
+    let start = performance.now();
+    requestAnimationFrame(function animate(time) {
+      let timeFraction = (time - start) / duration;
+      if (timeFraction > 1) timeFraction = 1;
+
+      let progress = timing(timeFraction);
+      draw(progress);
+
+      if (timeFraction < 1) {
+        requestAnimationFrame(animate);
+      }
+    });
+  }
+
+  const content = document.querySelector(".container");
+
+  animate({
+    duration: 1000,
+
+    timing(timeFraction) {
+      return timeFraction;
+    },
+
+    draw(progress) {
+      content.style.opacity = progress;
+      content.style.transform = `translateX(${(1 - progress) * 1000}px)`;
+    },
+  });
 });
