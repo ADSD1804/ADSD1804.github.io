@@ -10,11 +10,11 @@ document.addEventListener("DOMContentLoaded", function () {
     </ul>
     
     <a href="https://github.com/ADSD1804" target="_blank" class="github-link">
-      <img src="../assets/github-white-icon.png" alt="Github" class="logo">
+      <img src="assets/github-white-icon.png" alt="Github" class="logo">
     </a>
 
     <a href="https://www.linkedin.com/in/andres-david-soto-duque-b496a9373?utm_source=share_via&utm_content=profile&utm_medium=member_android" target="_blank" class="linkedin-link">
-      <img src="../assets/LinkedIn-Logo.png" alt="LinkedIn" class="logo" style="width: 80px; height: 60px;">
+      <img src="assets/LinkedIn-Logo.png" alt="LinkedIn" class="logo" style="width: 80px; height: 60px;">
     </a>
   `;
 
