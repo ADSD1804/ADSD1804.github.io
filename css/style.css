@@ -177,7 +177,7 @@ ul {
 
   .navbar-links.active {
     width: 300px;
-    position: fixed;
+    position: absolute;
     top: 33px;
     right: 20px;
     background-color: #2d558dfb;
