@@ -17,7 +17,7 @@ document.addEventListener("DOMContentLoaded", function () {
   const content = document.querySelector(".container");
 
   animate({
-    duration: 1200,
+    duration: 1000,
 
     timing(timeFraction) {
       return timeFraction;
@@ -25,7 +25,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
     draw(progress) {
       content.style.opacity = progress;
-      content.style.transform = `translateX(${(1 - progress) * 1200}px)`;
+      content.style.transform = `translateX(${(1 - progress) * 100}px)`;
     },
   });
 });
